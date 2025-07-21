@@ -1,4 +1,4 @@
-# Save Bot
+# Save Restricted Bot
 
 *A Telegram Bot, Which can send you restricted content by it's post link*
 
@@ -9,25 +9,9 @@
 - `HASH` Your API Hash from my.telegram.org
 - `ID` Your API ID from my.telegram.org
 - `TOKEN` Your bot token from @BotFather
-- `STRING` Your pyrogram V2 session string. 
-            Get from @Venom_String_robot
+- `STRING` Your session string, you can get it at [gist](https://gist.github.com/bipinkrish/0940b30ed66a5537ae1b5aaaee716897#file-main-py) and run it locally
 
 ---
-# Deploy to Heroku
-[![Deploy](https://www.herokucdn.com/deploy/button.svg)](https://dashboard.heroku.com/new?template=https://github.com/kishaku23/Save_bot)
-
-# Deploy to vps
-sudo apt update
-
-git clone your_repo_link
-
-cd Save_restricted_bot
-
-pip3 install -r requirements.txt
-
-python3 main.py
-
-Note:- use (nohup python3 main.py) to run 24×7
 
 # Usage
 
@@ -35,10 +19,30 @@ __FOR PUBLIC CHATS__
 
 _just send post/s link_
 
-<br>
 
 __FOR PRIVATE CHATS__
 
 _first send invite link of the chat (unnecessary if the account of string session already member of the chat)
 then send post/s link_
 
+
+__FOR BOT CHATS__
+
+_send link with '/b/', bot's username and message id, you might want to install some unofficial client to get the id like below_
+
+```
+https://t.me/b/botusername/4321
+```
+
+__MULTI POSTS__
+
+_send public/private posts link as explained above with formate "from - to" to send multiple messages like below_
+
+
+```
+https://t.me/xxxx/1001-1010
+
+https://t.me/c/xxxx/101 - 120
+```
+
+_note that space in between doesn't matter_
